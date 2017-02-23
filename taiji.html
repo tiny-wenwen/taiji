@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用一个div画太极</title>
+	<style>
+	body{background: #d7f1e6;}
+		.taiji{width: 0px; height:600px; border-left:300px solid #fff; border-right:300px solid #000; border-radius: 100%;}
+		.taiji::before{content:"";display: block; border: 100px solid black;  background-color: white; width: 100px; height: 100px; border-radius: 100%;  margin-left:-150px;}
+		.taiji::after{content:"";display: block;border: 100px solid #fff;  background-color: #000; width: 100px; height: 100px; border-radius: 100%;  margin-left:-150px;}
+	</style>
+</head>
+<body>
+	<div class="taiji"></div>
+</body>
+</html>
